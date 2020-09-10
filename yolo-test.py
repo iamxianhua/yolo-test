@@ -4,11 +4,18 @@ import os
 import time
 
 #yolo_dir = '/home/hessesummer/github/NTS-Net-my/yolov3'  # YOLO文件路径
-yolo_dir = "D://01) SAIC Projects//88) Personal Source//yolo-test//cfg//"  # YOLO文件路径
-weightsPath = os.path.join(yolo_dir, 'yolov3.weights')  # 权重文件
-configPath = os.path.join(yolo_dir, 'yolov3.cfg')  # 配置文件
-labelsPath = os.path.join(yolo_dir, 'coco.names')  # label名称
-imgPath = os.path.join(yolo_dir, 'test.jpg')  # 测试图像
+yolo_dir = 'D:\\01) SAIC Projects\\88) Personal Source\\yolo-test'
+#yolo_dir = r'D:\01) SAIC Projects\88) Personal Source\yolo-test\'
+#yolo_dir = 'D:\\temp'
+weightsPath = os.path.join(yolo_dir, 'cfg\\yolov3.weights')  # 权重文件
+configPath = os.path.join(yolo_dir, 'cfg\\yolov3.cfg')  # 配置文件
+labelsPath = os.path.join(yolo_dir, 'cfg\\coco.names')  # label名称
+imgPath = os.path.join(yolo_dir, 'data\\person.jpg')  # 测试图像
+
+#weightsPath = 'D:\\temp\cfg\yolov3.weights'
+#configPath =  'D:\\temp\cfg\yolov3.cfg'
+
+
 CONFIDENCE = 0.5  # 过滤弱检测的最小概率
 THRESHOLD = 0.4  # 非最大值抑制阈值
 
